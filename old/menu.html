@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<script src="jquery.js"> </script>
+	<script src="jquery2.js"></script>
+
+	<style type="text/css">
+		
+		body{
+			margin:0px;
+			padding:0px;
+			background-color: white;
+		}
+
+		#main{
+			height: 100%;
+			width: 100%;
+			position: fixed;
+		}
+
+
+
+	
+	.base{
+		background:url("bon.jpg");
+			background-size: 100% 100% ;
+			margin: 0;
+			padding: 0;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		transform: translate(-50%,-50%);
+		
+		height: 100%;
+			width: 60%;
+			
+			box-shadow: 10px 0px 30px rgba(0,0,0.4);
+			
+			z-index: 999;
+	}
+
+	.base span {
+		text-transform: uppercase;
+		display: block;
+		margin-top: 50%; 
+	}
+
+	.text1{
+		font-family: BatmanForeverOutline;
+		font-size: 55px;
+		color: white;
+		font-weight: 700;
+		text-align: center;
+		letter-spacing: 8px;
+		margin-bottom: 20px;
+		background-color: black;
+		position: relative;
+		animation: text 3s 1;
+		}
+		.text2{
+			font-family: BatmanForeverOutline;
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 20px; 
+			color: #6a24bc;
+		}
+		@keyframes text {
+			0%{
+				color: black;
+				margin-bottom: -40px;
+			}
+			30%{
+				letter-spacing: 20px;
+				margin-bottom: -40px
+			}
+			85%{
+				letter-spacing: 8px;
+				margin-bottom: -40px;
+			}
+		}
+		#menusect{
+			height: 100%;
+			width: 50%;
+			background-color: #f1f1f1;
+			position: absolute;
+			left: 55%;
+		}
+		#menusect ul{
+
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			position: absolute;
+			top: 30%;
+			left: -1%; 
+		}
+		#menusect ul li{
+			height: 100px;
+			width: 350px;
+			font-family: arial black;
+			font-size: 60px;
+			cursor: pointer;
+		}
+		.menu{
+            height: 100px;
+            width: 0px;
+			background-color: #ffc200;
+			display: flex;
+			left: -1%;
+			cursor: pointer;
+			pointer-events: none;
+			transition: all .5s;
+		}
+		.rotation{
+			pointer-events: none;
+
+		}
+		#menusect ul li:hover .menu{
+			width: 485px;
+
+		}
+
+
+	</style>
+
+	
+</head>
+<body>
+	 <div id="main">
+
+	 	<div class="base">
+		<span class="text1">THE FUTURE</span>
+		<div class="text2">IS NOW !!!</div>
+	</div>
+
+	 	<div id="menusect">
+	 		<ul>
+	 			<li onmouseover="anim('aide')">
+	 				<div id="aide" class="menu">
+	 					AID
+	 					<div class="rotate">E</div>
+	 				</div>
+	 			</li>
+	 			<li onmouseover="anim('enregistrer')">
+	 				<div id="enregistrer" class="menu">
+	 					ENREGISTRE
+	 					<div class="rotate">R</div>
+	 				</div>
+	 			</li>
+	 			<li onclick="enregistrer.html">
+	 				<div id="afficher" class="menu">
+	 					AFFICHE
+	 					<div class="rotate">R</div>
+	 				</div>
+	 			</li>
+	 		</ul>
+	 	</div>
+     
+	  </div>
+
+
+
+</body>
+      <script type="text/javascript">
+      	         
+
+
+
+
+      </script>
+</html>

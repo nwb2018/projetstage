@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enregistreur</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		.conteneur{
+			overflow: hidden;
+			background: url("enr.jpg");
+			height:700px;
+			background-size: 100%;
+		}
+
+		.tableau1{
+			float: left; 
+
+			background-color: grey;
+		}
+		.tab{
+			margin-left: 500px;
+			background: linear-gradient(to right,blue,pink,black);
+			width: 500px;
+			width: 420px;
+			height: 420px;
+			background: rgb(0.6,0.6,0.6,0.4);
+			color: #fff;
+			top: 40%;
+			left: 30%;
+			transform: translate(-50%,-50%);
+			box-sizing: border-box;
+			padding:70px 30px; 
+			position: absolute;
+			font-family: cooper black;
+
+		 }
+		.tab input{
+			display: block;
+			margin-bottom: 20px; 
+			margin: 7px;
+			padding: 0;
+			font-weight: bold;
+			border:none;
+         	border-bottom: 1px solid #fff;
+         	background: transparent;
+         	outline: none;
+         	height: 40px;
+         	color: #fff;
+         	font-size: 16px;
+         	width: 320px;
+		}
+
+		button{
+			border:none;
+         	outline: none;
+         	height: 40px;
+         	background: #f44d;
+         	font-size: 20px;
+         	border-radius: 10px;
+            margin-left: 17px;
+            padding-left: 10px;
+            padding: 5px;
+            margin-top: 50px;
+		}
+
+		.tab button:hover{
+			cursor: pointer;
+         	background: linear-gradient(to right,#fff,#f44d);
+		}
+
+		tr{
+			transition: all .3s ease-in-out;
+		}
+		tr:hover{   background-color: #eee; cursor: pointer;
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="conteneur">
+		<div class="tableau1">
+			<table id="table" border="1">
+				<tr>
+					<th>NOM complet de l'élève</th>
+					<th>NOTE de l'élève</th>
+
+					<th>N° séquence</th>
+				</tr>
+
+			</table>
+		</div>
+		<div class="tab" >
+			NOM complet de l'élève : <input type="text" name="nom" id="nom">
+			NOTE de l'élève : <input type="number" name="note" id="note">
+			N° séquence : <input type="number" name="seq" id="seq">
+
+			<button onclick="ajouter();">Enregistrer</button>
+			<button onclick="modifier();">Modifier</button>
+			<button onclick="supprimer();">Supprimer</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+
+
+		var rIndex,
+		    table= document.getElementById('table');
+
+		       function remplissage(){
+
+                     var rempli= false,
+
+                      nom=document.getElementById('nom').value,
+		       	      note=document.getElementById('note').value,
+		       	      seq=document.getElementById('seq').value;
+
+		       	      if (nom=== "") {
+		       	      	alert("Bien vouloir Entrer le nom de l'élève");
+		       	      	rempli =true;
+
+		       	      }
+
+		       	      if (note=== "" || note>20) {
+		       	      	alert("Bien vouloir Entrer la vrai note de l'élève");
+		       	      	rempli =true;
+
+		       	      }
+		       	      if (seq=== "" || seq>6) {
+		       	      	alert("Bien vouloir Entrer le bon numéro de la séquence");
+		       	      	rempli =true;
+
+
+		       	      } 
+
+		       	      return rempli;
+
+		       }
+
+		       function ajouter() {
+                      if (!remplissage()) { 
+		       	var newRow= table.insertRow(table.length),
+		       	cell1= newRow.insertCell(0),
+		       	cell2= newRow.insertCell(1),
+		       	cell3= newRow.insertCell(2),
+		       	nom= document.getElementById('nom').value;
+		       	note= document.getElementById('note').value,
+		       	seq= document.getElementById('seq').value;
+
+		       	cell1.innerHTML =nom;
+		       	cell2.innerHTML =note;
+		       	cell3.innerHTML = seq;
+
+		       	selection();
+		       	  } 
+		       }
+		       function selection() {       	
+		       	for( var i=1; i< table.rows.length;i++) {
+		       		table.rows[i].onclick= function() {
+		       			rIndex= this.rowIndex;
+		       			document.getElementById('nom').value= this.cells[0].innerHTML;
+		       			document.getElementById('note').value= this.cells[1].innerHTML;
+		       			document.getElementById('seq').value= this.cells[2].innerHTML; 	
+		       		};
+		       	}        
+		       }
+
+		       selection();
+
+		       function modifier(){
+
+		       	  var nom=document.getElementById('nom').value,
+		       	      note=document.getElementById('note').value,
+		       	      seq=document.getElementById('seq').value;
+
+		       	      if (!remplissage()) {
+		       	table.rows[rIndex].cells[0].innerHTML=nom;
+		       	table.rows[rIndex].cells[1].innerHTML=note;
+		       	table.rows[rIndex].cells[2].innerHTML=seq;
+		       	}
+		       }
+
+		       function supprimer(){
+		       	table.deleteRow(rIndex);
+
+		       	document.getElementById('nom').value="";
+		       	document.getElementById('note').value="";
+		       	document.getElementById('seq').value="";
+		       }
+
+		       
+	</script>
+
+</body>
+</html>
