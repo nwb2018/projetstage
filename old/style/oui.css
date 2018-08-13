@@ -225,7 +225,7 @@ header::before {
 	right: 0px;
 	top: 0px;
 	display: block;
-	background-image: url(font.jpg);
+	background-image: url(image/ac.jpg);
 	background-size: cover;
 	transform-origin: center center 0;
 	transform: translateZ(-1px) scale(2);
