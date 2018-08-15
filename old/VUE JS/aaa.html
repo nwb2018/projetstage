@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vueJs</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+
+	<div id="app">
+
+		{{message}}
+		
+	</div>
+
+
+	<div id="app-2">
+		<div v-bind:title="message">
+			Hover your mouse over me for a few seconds
+			to see my dynamically bound title!
+		</div>
+	</div>
+
+
+	<div id="#app-3" >
+		<div v-if="seen">
+			Now you see me
+		</div>
+	</div>
+
+
+	<div id="app-4">
+		<ol>
+			<li v-for="todo in todos">
+				{{ todo.text }}
+			</li>
+		</ol>
+	</div>		
+
+
+	<div id="app-6">
+	  <p>{{ message }}</p>
+	  <input v-model="message">
+	</div>
+
+
+
+
+	<div id="app-7">
+  <ol>
+    
+    <todo-item
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-bind:key="item.id">
+    </todo-item>
+  </ol>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+	var app = new Vue({
+		el: '#app',
+		data: {
+			message: 'Hello Vue!'
+		}
+	})
+
+
+
+	var app2= new Vue({
+		el: '#app-2' ,
+		data:{ message:'vous avez charger cette page le :' + new Date().toLocaleString()}
+	})
+
+	var app3= new Vue({
+		el: '#app-3' ,
+		data:{ seen:true}
+	})
+
+
+
+	var app4 = new Vue({
+		el: '#app-4',
+		data: {
+			todos: [
+			{ text: 'Learn JavaScript' },
+			{ text: 'Learn Vue' },
+			{ text: 'Build something awesome' }
+			]
+		}
+	})
+
+
+	var app6 = new Vue({
+	  el: '#app-6',
+	  data: {
+	    message: 'Hello Vue!'
+	  }
+	})
+
+
+	Vue.component('todo-item', {
+	  props: ['todo'],
+	  template: '<li>{{ todo.text }}</li>'
+	})
+
+	var app7 = new Vue({
+	  el: '#app-7',
+	  data: {
+	    groceryList: [
+	      { id: 0, text: 'Vegetables' },
+	      { id: 1, text: 'Cheese' },
+	      { id: 2, text: 'Whatever else humans are supposed to eat' }
+	    ]
+	  }
+	})
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mot de passe</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+
+	<div id="identifiant">
+		<p>{{message}}</p>
+		<input v-model="none">
+	</div>
+
+
+	<div id="motDePasse">
+		<p>{{message}}</p>
+		<input v-model="password" type="password">
+	</div>
+
+
+
+</body>
+
+<script type="text/javascript">
+
+	var identifiant = new Vue({
+		el: '#identifiant',
+		data: {
+			message: 'Identifiant : '
+		}
+	})
+
+	var motDePasse = new Vue({
+		el: '#motDePasse',
+		data: {
+			message: 'mot de passe : '
+		}
+	})
+
+</script>
+</html>
