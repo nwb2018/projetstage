@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mot de passe</title>
-	<script src="vue.js"></script>
+    <title>Mot de passe</title>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="essaie.css">
 </head>
 <body>
 
-	<div id="identifiant">
-		<p>{{message}}</p>
-		<input v-model="none">
-	</div>
+<div id="identifiant"><!--
+		<div>
+			<label>Identifiant</label>
+			<input v-model="name">
+		</div>
+		<div>
+			<label>Mot de passe</label>
+			<input v-model="password" type="password">
+		</div>
+		<p>Je suis {{name}} et mon password est {{password}}</p>
+		<button v-on:click="affichage">Afficher mes infos</button>
+		<button v-on:click="suppresiion">Test suppression</button> -->
+    <composant-de-connexion></composant-de-connexion>
 
-
-	<div id="motDePasse">
-		<p>{{message}}</p>
-		<input v-model="password" type="password">
-	</div>
-
+</div>
 
 
 </body>
 
 <script type="text/javascript">
 
-	var identifiant = new Vue({
-		el: '#identifiant',
-		data: {
-			message: 'Identifiant : '
-		}
-	})
+    Vue.component('composant-de-connexion', {
+        data: function () {
+            return {
+                name: '',
+                password: '',
+            }
+        },
+        methods: {
+            affichage2: function () {
+                alert(this.name + ' ' + this.password);
+                alert('deuxieme text');
+            },
+            suppresiion: () => {
+                alert('suppresiion');
+            }
+        },
+        template: '<div>		' +
+            '<div class="grand_caractere"> 		' +
+            '<label>Identifiant</label>			' +
+            '<input v-model="name">		' +
+            '</div>		<div>			' +
+            '<label>Mot de passe</label>			' +
+            '<input v-model="password" type="password">		' +
+            '</div>		<p>Je suis {{name}} et mon password est {{password}}</p>		<button v-on:click="affichage2">Test click</button></div>		'
+    })
 
-	var motDePasse = new Vue({
-		el: '#motDePasse',
-		data: {
-			message: 'mot de passe : '
-		}
-	})
+    var conteneurConnexion = new Vue({
+        el: '#identifiant'
+    })
 
+
+    /*var afficher = new Vue({
+        el: '#identifiant',
+        data:
+        methods: {
+            afficher: function () {
+                this.name.password = alert(name+password),
+            }
+        }
+    })
+    */
 </script>
 </html>

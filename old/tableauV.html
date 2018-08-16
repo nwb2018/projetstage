@@ -8,8 +8,8 @@
 		.conteneur{
 			overflow: hidden;
 			background: url("style/image/enr.jpg");
-			height:700px;
-			background-size: 100%;
+			height:1000px;
+			background-size: absolute;
 		}
 
 		.tableau1{
@@ -152,10 +152,10 @@
 		       	cell2.innerHTML =note;
 		       	cell3.innerHTML = seq;
 
-		       	selection();
+		       	ajoutEvenementClickSurToutesLesLignesDuTableau();
 		       	  } 
 		       }
-		       function selection() {       	
+		       function ajoutEvenementClickSurToutesLesLignesDuTableau() {       	
 		       	for( var i=1; i< table.rows.length;i++) {
 		       		table.rows[i].onclick= function() {
 		       			rIndex= this.rowIndex;
@@ -166,7 +166,7 @@
 		       	}        
 		       }
 
-		       selection();
+		       ajoutEvenementClickSurToutesLesLignesDuTableau();
 
 		       function modifier(){
 
