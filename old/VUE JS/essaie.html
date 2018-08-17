@@ -1,73 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mot de passe</title>
-    <script src="vue.js"></script>
-    <link rel="stylesheet" type="text/css" href="essaie.css">
+	<title></title>
+	<script src="vue.js"></script>
 </head>
 <body>
 
-<div id="identifiant"><!--
-		<div>
-			<label>Identifiant</label>
-			<input v-model="name">
-		</div>
-		<div>
-			<label>Mot de passe</label>
-			<input v-model="password" type="password">
-		</div>
-		<p>Je suis {{name}} et mon password est {{password}}</p>
-		<button v-on:click="affichage">Afficher mes infos</button>
-		<button v-on:click="suppresiion">Test suppression</button> -->
-    <composant-de-connexion></composant-de-connexion>
+	<div id="element">
 
-</div>
+		<p v-text="texte"></p>
+		
+	</div>
+
+
+	<div id="voyons">
+		{{ texte }}
+	</div>
 
 
 </body>
-
 <script type="text/javascript">
 
-    Vue.component('composant-de-connexion', {
-        data: function () {
-            return {
-                name: '',
-                password: '',
-            }
-        },
-        methods: {
-            affichage2: function () {
-                alert(this.name + ' ' + this.password);
-                alert('deuxieme text');
-            },
-            suppresiion: () => {
-                alert('suppresiion');
-            }
-        },
-        template: '<div>		' +
-            '<div class="grand_caractere"> 		' +
-            '<label>Identifiant</label>			' +
-            '<input v-model="name">		' +
-            '</div>		<div>			' +
-            '<label>Mot de passe</label>			' +
-            '<input v-model="password" type="password">		' +
-            '</div>		<p>Je suis {{name}} et mon password est {{password}}</p>		<button v-on:click="affichage2">Test click</button></div>		'
-    })
+	let vm= new Vue({
+		el:'#element',
+		data: {
+			texte: "Mon texte"
 
-    var conteneurConnexion = new Vue({
-        el: '#identifiant'
-    })
+		}
+	});
+
+	setTimeout(function(){ vm.texte = 'Mon autre texte'; }, 3000);
 
 
-    /*var afficher = new Vue({
-        el: '#identifiant',
-        data:
-        methods: {
-            afficher: function () {
-                this.name.password = alert(name+password),
-            }
-        }
-    })
-    */
+	var appliquer = new Vue({
+	  el: '#voyons',
+	  data: {
+	    texte: 'Hello Vue!'
+	  }
+	})
+	
 </script>
+
 </html>
