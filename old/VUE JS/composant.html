@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.js"></script>
+</head>
+<body>
+
+
+	<div class="bon" id="bie">
+
+		<ul>
+
+		<li><a href="acueil.html"><message type="error" :message='message'></message></a></li>
+		<li><a href="presentation.html"><message type="error" :message='message1'></message></a></li>
+		<li><a href="parent.html"><message type="error" :message='message2'></message></a></li>
+		<li><a href="inscription.html"><message type="error" :message='message3'></message></a></li>
+		</ul>
+	</div>
+
+</body>
+
+
+	<script type="text/javascript">
+
+	Vue.component('message', {
+
+		props: ['type' , 'message'], 
+
+		template: '<div class="bon" :class="type">{{ message }}</div>',
+		
+	})
+
+	let vm = new Vue({
+		el:'#bie',
+		data:{message:'Accueil',
+		message1:'presentation',
+		message2:'Espace parent',
+		message3:'Connexion',
+
+	},
+	})
+ </script>
+
+</html>
