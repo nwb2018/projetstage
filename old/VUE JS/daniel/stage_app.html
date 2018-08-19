@@ -4,79 +4,61 @@
     <title></title>
     <script src="../vue.js"></script>
     <script src="../vue-router.js"></script>
+    <link rel="stylesheet" type="text/css" href="stage_app.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
 
 
-<div class="bon" id="bie">
+<div id="app">
+    <h1>Billy App!</h1>
 
-    <ul>
-
-        <li><a href="acueil.html">
-            <message type="error" :message='message'></message>
-        </a></li>
-        <li><a href="presentation.html">
-            <message type="error" :message='message1'></message>
-        </a></li>
-        <li><a href="parent.html">
-            <message type="error" :message='message2'></message>
-        </a></li>
-        <li><a href="inscription.html">
-            <message type="error" :message='message3'></message>
-        </a></li>
-    </ul>
-</div>
-
-<div id="daniel-barre-navigation-div">
     <barredenavigation :tableauelementsnavigation="elementsBarreNavigation"></barredenavigation>
+    je met ce que je veux
+    <router-view></router-view>
 </div>
 
 </body>
 
 
+
+<script src="barreDeNavigation.js"></script>
+<script src="componentAccueil.js"></script>
+<script src="componentConnexion.js"></script>
+<script src="componentParent.js"></script>
+<script src="componentPresentation.js"></script>
+
+
 <script type="text/javascript">
 
-    Vue.component('message', {
 
-        props: ['type', 'message'],
 
-        template: '<div class="bon" :class="type">{{ message }}</div>',
 
+
+
+    const routes = [
+        {path: '/accueil', component: AccueilComponent},
+        {path: '/presentation', component: PresentationComponent},
+        {path: '/parent', component: ParentComponent},
+        {path: '/inscription', component: ConnexionComponent},
+    ];
+
+    const router = new VueRouter({
+        routes // short for `routes: routes`
     });
 
-
-
-
-    let vm = new Vue({
-        el: '#bie',
-        data: {
-            message: 'Accueil',
-            message1: 'presentation',
-            message2: 'Espace parent',
-            message3: 'Connexion',
-
-        },
-    });
-
-    Vue.component('barredenavigation', {
-        props: ['tableauelementsnavigation'],
-        template: '<div class="flex-container" style="display: flex; justify-content: space-evenly"> ' +
-        '<a v-for="element in tableauelementsnavigation" :href="element.urlLink"> {{element.text}}</a>' +
-        '</div>'
-    });
-
-    let danielBarreNavigationDiv = new Vue({
-        el: '#daniel-barre-navigation-div',
-        data: {
+    const app = new Vue({
+        router, data: {
             elementsBarreNavigation: [
-                {text: 'Accueil', urlLink: 'accueil.html'},
-                {text: 'Presentation', urlLink: 'presentation.html'},
-                {text: 'Espace parent', urlLink: 'parent.html'},
-                {text: 'Connexion', urlLink: 'inscription.html'},
+                {text: 'Accueil', urlLink: 'accueil'},
+                {text: 'Presentation', urlLink: 'presentation'},
+                {text: 'Espace parent', urlLink: 'parent'},
+                {text: 'Connexion', urlLink: 'inscription'},
             ]
 
         },
-    });
+    }).$mount('#app')
+
 
 </script>
 

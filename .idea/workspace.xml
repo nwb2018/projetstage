@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfb2571b-8da7-46d6-9862-d0c02b3fca44" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/VUE JS/daniel/stage_app.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/VUE JS/daniel/barreDeNavigation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/VUE JS/daniel/componentAccueil.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/VUE JS/daniel/componentConnexion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/VUE JS/daniel/componentParent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/VUE JS/daniel/componentPresentation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/VUE JS/daniel/stage_app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Test git.iml" afterPath="$PROJECT_DIR$/.idea/Test git.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/old/VUE JS/daniel/stage_app.html" afterPath="$PROJECT_DIR$/old/VUE JS/daniel/stage_app.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,34 +64,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chrono.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/old/VUE JS/chrono.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="aaa.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/old/VUE JS/aaa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="986">
               <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="31" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composant.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/old/VUE JS/composant.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <marker date="1534639489614" expanded="true" signature="1346:1390" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -91,22 +77,83 @@
       <file leaf-file-name="stage_app.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/stage_app.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="componentParent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentParent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
               <folding>
-                <marker date="1534639825084" expanded="true" signature="1387:1431" ph="..." />
+                <marker date="1534644953474" expanded="true" signature="78:462" ph="..." />
+                <marker date="1534644953474" expanded="true" signature="135:148" ph="..." />
+                <marker date="1534644953474" expanded="true" signature="214:227" ph="..." />
+                <marker date="1534644953474" expanded="true" signature="292:305" ph="..." />
+                <marker date="1534644953474" expanded="true" signature="306:455" ph="..." />
+                <marker date="1534644953474" expanded="true" signature="349:361" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vue.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/old/VUE JS/vue.js">
+      <file leaf-file-name="componentPresentation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentPresentation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1534644953470" expanded="true" signature="51:168" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="componentConnexion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentConnexion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="componentAccueil.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentAccueil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <folding>
+                <marker date="1534644953477" expanded="true" signature="46:130" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage_app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/stage_app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="barreDeNavigation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/barreDeNavigation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <marker date="1534644383322" expanded="true" signature="94:264" ph="..." />
+                <marker date="1534644383322" expanded="true" signature="129:131" ph="..." />
+                <marker date="1534644383322" expanded="true" signature="129:264" ph="..." />
               </folding>
             </state>
           </provider>
@@ -114,10 +161,23 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>message.:</find>
+      <find>'</find>
     </findStrings>
+    <replaceStrings>
+      <replace>`</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,6 +186,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/old/VUE JS/composant.html" />
+        <option value="$PROJECT_DIR$/old/VUE JS/daniel/barreDeNavigation.js" />
+        <option value="$PROJECT_DIR$/old/VUE JS/daniel/stage_app.css" />
+        <option value="$PROJECT_DIR$/old/VUE JS/daniel/componentInscription.js" />
+        <option value="$PROJECT_DIR$/old/VUE JS/daniel/componentAccueil.js" />
+        <option value="$PROJECT_DIR$/old/VUE JS/daniel/componentPresentation.js" />
+        <option value="$PROJECT_DIR$/old/VUE JS/daniel/componentParent.html" />
+        <option value="$PROJECT_DIR$/old/VUE JS/daniel/componentParent.js" />
+        <option value="$PROJECT_DIR$/old/VUE JS/daniel/componentConnexion.js" />
         <option value="$PROJECT_DIR$/old/VUE JS/daniel/stage_app.html" />
       </list>
     </option>
@@ -181,6 +249,22 @@
               <item name="old" type="462c0819:PsiDirectoryNode" />
               <item name="VUE JS" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="projetstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projetstage" type="462c0819:PsiDirectoryNode" />
+              <item name="old" type="462c0819:PsiDirectoryNode" />
+              <item name="VUE JS" type="462c0819:PsiDirectoryNode" />
+              <item name="daniel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projetstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="projetstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="vue-router" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -195,9 +279,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/old/VUE JS" />
       <recent name="$PROJECT_DIR$/old/VUE JS/daniel" />
     </key>
   </component>
@@ -227,12 +314,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534430012481</updated>
       <workItem from="1534430017508" duration="118000" />
-      <workItem from="1534637355517" duration="2241000" />
+      <workItem from="1534637355517" duration="7049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2359000" />
+    <option name="totallyTimeSpent" value="7167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -241,6 +328,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -251,7 +339,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -275,26 +362,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/old/VUE JS/essaie.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/VUE JS/chrono.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-361">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/VUE JS/aaa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -309,6 +380,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/composant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1534639489614" expanded="true" signature="1346:1390" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/vue-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/essaie.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/old/VUE JS/essaie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -317,23 +414,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/old/VUE JS/composant.html">
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/aaa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="986">
+          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/barreDeNavigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <marker date="1534639489614" expanded="true" signature="1346:1390" ph="..." />
+            <marker date="1534644383322" expanded="true" signature="94:264" ph="..." />
+            <marker date="1534644383322" expanded="true" signature="129:131" ph="..." />
+            <marker date="1534644383322" expanded="true" signature="129:264" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/stage_app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentAccueil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <marker date="1534644953477" expanded="true" signature="46:130" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentInscription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentParent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentParent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <marker date="1534644953474" expanded="true" signature="78:462" ph="..." />
+            <marker date="1534644953474" expanded="true" signature="135:148" ph="..." />
+            <marker date="1534644953474" expanded="true" signature="214:227" ph="..." />
+            <marker date="1534644953474" expanded="true" signature="292:305" ph="..." />
+            <marker date="1534644953474" expanded="true" signature="306:455" ph="..." />
+            <marker date="1534644953474" expanded="true" signature="349:361" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentPresentation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <marker date="1534644953470" expanded="true" signature="51:168" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/componentConnexion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/old/VUE JS/daniel/stage_app.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1534639825084" expanded="true" signature="1387:1431" ph="..." />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

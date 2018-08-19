@@ -1,0 +1,30 @@
+.all-border-black {
+    border: solid 1px black;
+    border-radius: 3px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+div {
+    padding: 5px;
+    margin: 5px;
+}
+
+.flex-1-1 {
+    flex:1 1;
+}
+
+.flex-2-1 {
+    flex:2 1;
+}
