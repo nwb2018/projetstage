@@ -280,7 +280,7 @@ body{
 
 p.os{
 	margin-top: 100px;
-	padding-top: 150px;
+	top: -10px;
 	font-size: 40px;
 	color: orange;
 }
@@ -288,7 +288,7 @@ p.os{
 p.ss{
 	font-family: algerian;
 	margin-top:0px;
-	padding-top: 10px;
+	top: 10px;
 	font-size: 30px;
 	color: yellow;
 }
