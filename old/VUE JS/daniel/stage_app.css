@@ -13,7 +13,7 @@
 }
 
 .space-evenly {
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 div {
@@ -28,3 +28,7 @@ div {
 .flex-2-1 {
     flex:2 1;
 }
+
+
+
+
