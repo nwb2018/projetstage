@@ -12,7 +12,7 @@ const AccueilComponent = {
 
 	<div class="center">     
 		<div class="img">
-			<img src="image/ss.jpg">
+			<img src="image/tal.jpg">
 			<div class="container">
 				<div class="content">
 					<h1>Pourquoi nous sommes les meilleurs?</h1>
@@ -25,7 +25,7 @@ const AccueilComponent = {
 
 	<div class="yes">
 		<div class="img1">
-			<img src="image/h.jpg">
+			<img src="image/ens.jpg">
 			<div class="contain">
 				<div class="conten">
 					<h1>De bons enseignants au service des élèves!!</h1>

@@ -37,10 +37,12 @@ div {
     font-size: 15px;
     padding: 10px;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .button-navigation:hover{
-    background-color: red;
+    background-color: #550074;
+    transition: 0.5s;
 }
 
 
@@ -53,16 +55,22 @@ section {
 }
 
 section.first{
-    background:#262626; 
+    background:url(image/yes.jpg); 
+    background-size: cover;
 
 }
 
 section.second{
     background:#fff; 
+    padding: 50px 150px;
+    box-sizing: border-box;
+    height: auto;
+    color: #0D0D0D;
 }
 
 section.last{
-    background:#262626; 
+    background:url(image/yeees.jpg); 
+    background-size: cover; 
 }
 
 .new{
@@ -85,6 +93,28 @@ section.last{
 }
 
 
+.t1{
+    color: #0016FF;
+    font-size: 35px;
+    font-family: BatmanForeverOutline;
+}
+
+.t2{
+    color: #0016FF;
+    font-size: 35px;
+    font-family: BatmanForeverOutline;
+}
+
+.t{
+    color: #0016FF;
+    font-size: 25px;
+    font-family: BatmanForeverOutline; 
+}
+
+.imm{
+   margin-top: -65px;
+    margin-left: -100px;
+}
 
 
 .login{
@@ -161,6 +191,7 @@ h1{
 .login a:hover{
     color: #39dc79;
 }
+
 
 
 
