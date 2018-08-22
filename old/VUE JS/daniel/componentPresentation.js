@@ -1,6 +1,6 @@
 const PresentationComponent = {
     template: `
-    <div class="rr">
+    <div class="rr container-plein-ecran">
 <section class="first"> 
 <div class="new"></div>
 </section>

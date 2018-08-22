@@ -8,8 +8,10 @@ const ConnexionComponent = {template: `<div class="login">
 
 	  		<p>Mot de passe:</p>
 	  		<input type="password" name="passe" placeholder="Entrer votre mot de passe">
-	  		<input type="submit" name="submit" value="Se connecter">
-	  		<a  href="" >Mot de passe oublié?</a>
-	  		<br><a  href="" >Créer un compte</a>
+	  		<router-link to="/inscription/tableau"><input type="submit" name="submit" value="Se connecter"></router-link>
+	  		<router-link to="/inscription/mdpoublie"> Mot de passe oublié? </router-link>      
+	  		
+
 	  	</form>
+
 	  </div>`};

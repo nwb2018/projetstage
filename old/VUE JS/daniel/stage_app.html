@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <script src="../vue.js"></script>
-    <script src="../vue-router.js"></script>
-    <link rel="stylesheet" type="text/css" href="stage_app.css">
-    <link rel="stylesheet" type="text/css" href="oui.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title></title>
+	<script src="../vue.js"></script>
+	<script src="../vue-router.js"></script>
+	<link rel="stylesheet" type="text/css" href="stage_app.css">
+	<link rel="stylesheet" type="text/css" href="oui.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
 
 
-<div id="app">
-    <barredenavigation :tableauelementsnavigation="elementsBarreNavigation"></barredenavigation>
-  
-    <router-view></router-view>
-</div>
+	<div id="app">
+		<barredenavigation :tableauelementsnavigation="elementsBarreNavigation"></barredenavigation>
+		<router-view></router-view>
+	</div>
 
 </body>
 
@@ -25,7 +24,10 @@
 <script src="componentAccueil.js"></script>
 <script src="componentConnexion.js"></script>
 <script src="componentParent.js"></script>
+<script src="componentInscription.js"></script>
 <script src="componentPresentation.js"></script>
+<script src="componentGenerateurMD.js"></script>
+<script src="componentTableau.js"></script>
 
 
 <script type="text/javascript">
@@ -35,30 +37,58 @@
 
 
 
-    const routes = [
-        {path: '/accueil', component: AccueilComponent},
-        {path: '/presentation', component: PresentationComponent},
-        {path: '/parent', component: ParentComponent},
-        {path: '/inscription', component: ConnexionComponent},
-    ];
+	const routes = [
+	{path: '/accueil', component: AccueilComponent},
+	{path: '/presentation', component: PresentationComponent},
+	{path: '/parent', component: ParentComponent},
+	{path: '/inscription', component: InscriptionComponent, children: [{
+          path: '',
+          component: ConnexionComponent
+      },{
+          path: 'mdpoublie',
+          component: MotDePasseGenerator
 
-    const router = new VueRouter({
+      },
+      {
+          path: 'posts',
+          component: MotDePasseGenerator
+         
+      },
+      {
+          path: 'tableau',
+          component: tableauRegistre
+
+      },
+      {
+          path: 'posts',
+          component: tableauRegistre
+         
+      }
+
+      ]},
+      ];
+
+      const router = new VueRouter({
         routes // short for `routes: routes`
     });
 
-    const app = new Vue({
-        router, data: {
-            elementsBarreNavigation: [
-                {text: 'Accueil', urlLink: 'accueil'},
-                {text: 'Presentation', urlLink: 'presentation'},
-                {text: 'Espace parent', urlLink: 'parent'},
-                {text: 'Connexion', urlLink: 'inscription'},
-            ]
+      const app = new Vue({
+      	router, data: {
+      		elementsBarreNavigation: [
+      		{text: 'Accueil', urlLink: '/accueil'},
+      		{text: 'Presentation', urlLink: '/presentation'},
+      		{text: 'Espace parent', urlLink: '/parent'},
+      		{text: 'Connexion', urlLink: '/inscription'},
+      		]
 
-        },
-    }).$mount('#app')
+      	},
+      	components: {
+      		'retrouver-mdp' : MotDePasseGenerator,
+      		'enregistrer' : tableauRegistre
+      	}
+      }).$mount('#app')
 
 
-</script>
+  </script>
 
-</html>
+  </html>

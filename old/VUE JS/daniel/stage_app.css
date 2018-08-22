@@ -29,6 +29,22 @@ div {
     flex:2 1;
 }
 
+.container-plein-ecran {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.barre-navigation{
+    z-index: 5;
+    position: relative;
+    display: flex;
+     justify-content: space-around;
+}
+
 .button-navigation {
     color: white;
     text-decoration: none;
@@ -192,8 +208,81 @@ h1{
     color: #39dc79;
 }
 
+.login .exit-button {
+    font-size: 30px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    color: red;
+}
 
+.conteneur{
+            overflow: hidden;
+            background: url("style/image/enr.jpg");
+            height:1000px;
+            background-size: absolute;
+        }
 
+        .tableau1{
+            float: left; 
 
+            background-color: grey;
+        }
+        .tab{
+            margin-left: 500px;
+            background: linear-gradient(to right,blue,pink,black);
+            width: 500px;
+            width: 420px;
+            height: 420px;
+            background: rgb(0.6,0.6,0.6,0.4);
+            color: #fff;
+            top: 40%;
+            left: 30%;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding:70px 30px; 
+            position: absolute;
+            font-family: cooper black;
 
+         }
+        .tab input{
+            display: block;
+            margin-bottom: 20px; 
+            margin: 7px;
+            padding: 0;
+            font-weight: bold;
+            border:none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+            width: 320px;
+        }
 
+        button{
+            border:none;
+            outline: none;
+            height: 40px;
+            background: #f44d;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-left: 17px;
+            padding-left: 10px;
+            padding: 5px;
+            margin-top: 50px;
+        }
+
+        .tab button:hover{
+            cursor: pointer;
+            background: linear-gradient(to right,#fff,#f44d);
+        }
+
+        tr{
+            transition: all .3s ease-in-out;
+        }
+        tr:hover{   background-color: #eee; cursor: pointer;
+
+        }
